@@ -1,0 +1,42 @@
+{
+  "name": "people-search-tool",
+  "version": "2.2.0",
+  "description": "A full-stack web application for searching people across multiple platforms from CSV uploads",
+  "main": "index.js",
+  "scripts": {
+    "dev:frontend": "cd frontend && pnpm run dev",
+    "dev:backend": "cd backend && python src/main.py",
+    "build:frontend": "cd frontend && pnpm run build",
+    "install:frontend": "cd frontend && pnpm install",
+    "install:backend": "cd backend && pip install -r requirements.txt",
+    "setup": "npm run install:frontend && npm run install:backend",
+    "start": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\""
+  },
+  "keywords": [
+    "people-search",
+    "csv-processing",
+    "facebook-search",
+    "contact-management",
+    "react",
+    "flask",
+    "full-stack"
+  ],
+  "author": "People Search Tool Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "python": ">=3.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/people-search-tool.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/people-search-tool/issues"
+  },
+  "homepage": "https://github.com/yourusername/people-search-tool#readme"
+}
+
